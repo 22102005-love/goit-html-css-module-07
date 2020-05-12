@@ -1,0 +1,264 @@
+/* galada-regular - latin */
+@font-face {
+  font-family: "Galada";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Galada Regular"), local("Galada-Regular"),
+    url("../fonts/galada-v5-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/galada-v5-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-regular - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Montserrat Regular"), local("Montserrat-Regular"),
+    url("../fonts/montserrat-v14-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* montserrat-700 - latin */
+@font-face {
+  font-family: "Montserrat";
+  font-style: normal;
+  font-weight: 700;
+  src: local("Montserrat Bold"), local("Montserrat-Bold"),
+    url("../fonts/montserrat-v14-latin-700.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/montserrat-v14-latin-700.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* roboto-slab-regular - latin */
+@font-face {
+  font-family: "Roboto Slab";
+  font-style: normal;
+  font-weight: 400;
+  src: local(""),
+    url("../fonts/roboto-slab-v11-latin-regular.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/roboto-slab-v11-latin-regular.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+/* noto-serif-italic - latin */
+@font-face {
+  font-family: "Noto Serif";
+  font-style: italic;
+  font-weight: 400;
+  src: local("Noto Serif Italic"), local("NotoSerif-Italic"),
+    url("../fonts/noto-serif-v8-latin-italic.woff2") format("woff2"),
+    /* Chrome 26+, Opera 23+, Firefox 39+ */
+      url("../fonts/noto-serif-v8-latin-italic.woff") format("woff"); /* Chrome 6+, Firefox 3.6+, IE 9+, Safari 5.1+ */
+}
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+ul {
+  list-style: none;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+a {
+  text-decoration: none;
+}
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+.site-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  padding: 36px 0 94px 0;
+}
+.site-logo {
+  font-size: 26px;
+  letter-spacing: 1px;
+  line-height: 41px;
+  color: #fed136;
+  font-family: "Galada";
+  padding-left: 6px;
+}
+.site-navigation-list {
+  display: flex;
+}
+.site-navigation-list-item:not(:last-child) {
+  margin-right: 40px;
+}
+.navigation-list-item-link {
+  font-size: 14px;
+  line-height: 41px;
+  color: #222222;
+  font-family: "Montserrat";
+  font-weight: 400;
+  text-align: center;
+  text-transform: uppercase;
+}
+.navigation-list-item-link:hover {
+  color: #fed136;
+}
+.section-title {
+  font-size: 40px;
+  line-height: 75px;
+  letter-spacing: -1px;
+
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  margin: 0 auto;
+  text-transform: uppercase;
+  margin-bottom: 4px;
+}
+.section-services-title {
+  color: #222222;
+}
+.section-description {
+  font-size: 16px;
+  line-height: 1.2;
+  color: #777777;
+  font-family: "Noto Serif";
+  font-weight: 400;
+  font-style: italic;
+  text-align: center;
+  margin-bottom: 80px;
+}
+.section-services-content {
+  display: flex;
+  justify-content: space-between;
+}
+.section-services-content-item {
+  width: 290px;
+}
+.section-services-content-item::before {
+  content: "";
+  display: block;
+  width: 66px;
+  height: 66px;
+  border-radius: 50%;
+  background-color: #ffffff;
+  border: 3px solid #fed136;
+  margin: 0 auto;
+  background-repeat: no-repeat;
+  background-position: center;
+}
+.section-services-content-item:first-child::before {
+  background-image: url("../img/icon/Icon-Basket.png");
+}
+.section-services-content-item:nth-child(2)::before {
+  background-image: url("../img/icon/Icon-Laptop.png");
+}
+.section-services-content-item:last-child::before {
+  background-image: url("../img/icon/Icon-Locked.png");
+}
+.services-content-item-title {
+  font-size: 18px;
+  letter-spacing: 0px;
+  line-height: 75px;
+  color: #222222;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+}
+.services-content-item-description {
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #777777;
+  font-family: "Roboto Slab";
+  font-weight: 400;
+  text-align: center;
+  margin-bottom: 122px;
+}
+.section-contact-us {
+  background-color: #222222;
+}
+.section-contact-us {
+  color: #ffffff;
+  background-image: url("../img/Map Image.png");
+  background-position: right bottom 20px;
+  background-repeat: no-repeat;
+  padding-top: 90px;
+  padding-bottom: 114px;
+}
+.contact-form-block {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 28px;
+}
+.input-list-item:not(:last-child) {
+  margin-bottom: 26px;
+}
+.contact-form-input {
+  width: 455px;
+  height: 50px;
+  border-radius: 2px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  vertical-align: middle;
+  padding-left: 20px;
+}
+.contact-form-input::placeholder {
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #bbbbbb;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-transform: uppercase;
+}
+.contact-form-input:focus {
+  outline: none;
+}
+.contact-form-input:required:focus:valid:not(:placeholder-shown) {
+  border: 1px solid #359b35;
+}
+.contact-form-input:required:focus:invalid:not(:placeholder-shown) {
+  border: 1px solid #ff0000;
+}
+.contact-form-textarea {
+  width: 455px;
+  resize: none;
+  padding-left: 20px;
+  padding-top: 20px;
+  background-color: #ffffff;
+  border: 1px solid #cccccc;
+  border-radius: 2px;
+}
+.contact-form-textarea::placeholder {
+  text-transform: uppercase;
+  font-size: 14px;
+  letter-spacing: 0px;
+  color: #bbbbbb;
+  font-family: "Montserrat";
+  font-weight: 700;
+}
+.contact-form-textarea:focus {
+  outline: none;
+}
+.contact-form-textarea:required:focus:valid:not(:placeholder-shown) {
+  border: 1px solid #359b35;
+}
+.contact-form-textarea:required:focus:invalid:not(:placeholder-shown) {
+  border: 1px solid #ff0000;
+}
+.contact-form-button-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.contact-form-submit {
+  width: 240px;
+  height: 65px;
+  border-radius: 3px;
+  background-color: #fed136;
+  font-size: 18px;
+  color: #ffffff;
+  font-family: "Montserrat";
+  font-weight: 700;
+  text-align: center;
+  text-transform: uppercase;
+  box-sizing: border-box;
+  border: none;
+  cursor: pointer;
+}
